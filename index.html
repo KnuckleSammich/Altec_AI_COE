@@ -39,6 +39,17 @@ h2 {
   box-shadow: 0px 5px 12px rgba(0,0,0,0.2);
 }
 .project h3 { margin-top: 0; }
+.project .status {
+  display: inline-block;
+  background-color: #EEB21E;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
 .view-link {
   color: #007CC3;
   font-weight: bold;
@@ -64,14 +75,38 @@ footer {
   <h2>Featured Projects</h2>
 
   <div class="project" onclick="window.location.href='projects/watchdog.html'">
-    <h3>Part Print Watchdog</h3>
-    <p>Desktop application that validates SolidWorks print PDFs against manufacturing standards.</p>
+    <h3>Part Print Watchdog <span class="status">IN PROGRESS</span></h3>
+    <p>Program that analyzes large batches of part print PDFs to detect common design errors and manufacturing difficulties, including minimum flange length issues.</p>
     <span class="view-link">View Project →</span>
   </div>
 
-  <div class="project" onclick="window.location.href='projects/training.html'">
-    <h3>Training Automation System</h3>
-    <p>Automated system for managing associate training records using SharePoint, Excel, and workflows.</p>
+  <div class="project" onclick="window.location.href='projects/hazardous-waste.html'">
+    <h3>Hazardous Waste Removal Process</h3>
+    <p>Streamlined hazardous waste pickup process using QR codes and automated Teams notifications to ensure environmental compliance. <strong>630+ responses.</strong></p>
+    <span class="view-link">View Project →</span>
+  </div>
+
+  <div class="project" onclick="window.location.href='projects/paint-control.html'">
+    <h3>Paint Control Charts</h3>
+    <p>Real-time monitoring dashboards that reduced variance in viscosity readings and paint kitchen temperatures. <strong>7,000+ submissions.</strong></p>
+    <span class="view-link">View Project →</span>
+  </div>
+
+  <div class="project" onclick="window.location.href='projects/paint-checksheet.html'">
+    <h3>Digitized Paint System Check Sheet</h3>
+    <p>Digital replacement for paper check sheets, enabling tracking of jobs, fluid rates, and paint defects with full historical analytics. <strong>10,000+ submissions.</strong></p>
+    <span class="view-link">View Project →</span>
+  </div>
+
+  <div class="project" onclick="window.location.href='projects/assembly-verification.html'">
+    <h3>Assembly Part Verification System</h3>
+    <p>Improved accountability and feedback loops for welders through structured part verification submissions. <strong>11,000+ submissions.</strong></p>
+    <span class="view-link">View Project →</span>
+  </div>
+
+  <div class="project" onclick="window.location.href='projects/training-request.html'">
+    <h3>Training Request System</h3>
+    <p>Automated request and routing system for plant training needs, with Power Automate flows handling submissions, approvals, and notifications across departments.</p>
     <span class="view-link">View Project →</span>
   </div>
 
