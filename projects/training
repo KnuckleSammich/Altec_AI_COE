@@ -27,10 +27,9 @@ footer { text-align: center; padding: 20px; background-color: #000000; color: wh
   <div class="section">
     <h2>Overview</h2>
     <p>
-      An end-to-end training request system that captures, routes, and tracks
-      training needs across the plant. Supervisors and associates submit requests
-      through a simple form; Power Automate handles the rest — routing, approvals,
-      and notifications.
+      An end-to-end training request system that captures, routes, and tracks training
+      needs across the plant. Supervisors and associates submit requests through a simple
+      form; Power Automate handles routing, approvals, and notifications.
     </p>
   </div>
 
@@ -52,9 +51,9 @@ footer { text-align: center; padding: 20px; background-color: #000000; color: wh
   <div class="section">
     <h2>Impact</h2>
     <p>
-      Replaced ad-hoc emails and informal requests with a structured, transparent
-      process. Improved trainer workload visibility, accelerated response times, and
-      gave leadership clear data on training demand across the plant.
+      Replaced ad-hoc emails and informal requests with a structured, transparent process.
+      Improved trainer workload visibility, accelerated response times, and gave leadership
+      clear data on training demand across the plant.
     </p>
   </div>
 
