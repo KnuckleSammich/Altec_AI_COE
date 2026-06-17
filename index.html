@@ -33,12 +33,34 @@ h2 {
   box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
   transition: 0.2s;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .project:hover {
   transform: scale(1.02);
   box-shadow: 0px 5px 12px rgba(0,0,0,0.2);
 }
-.project h3 { margin-top: 0; }
+.project .thumb {
+  flex: 0 0 140px;
+  height: 100px;
+  background-color: #e5e5e5;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.project .thumb.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #888;
+  text-align: center;
+}
+.project .info { flex: 1; }
+.project h3 { margin: 0 0 8px 0; }
+.project p { margin: 0 0 10px 0; }
 .project .status {
   display: inline-block;
   background-color: #EEB21E;
@@ -75,39 +97,57 @@ footer {
   <h2>Featured Projects</h2>
 
   <div class="project" onclick="window.location.href='projects/watchdog.html'">
-    <h3>Part Print Watchdog <span class="status">IN PROGRESS</span></h3>
-    <p>Program that analyzes large batches of part print PDFs to detect common design errors and manufacturing difficulties, including minimum flange length issues.</p>
-    <span class="view-link">View Project →</span>
+    <div class="thumb" style="background-image: url('images/watchdog1.png');"></div>
+    <div class="info">
+      <h3>Part Print Watchdog <span class="status">IN PROGRESS</span></h3>
+      <p>Program that analyzes large batches of part print PDFs to detect common design errors and manufacturing difficulties, including minimum flange length issues.</p>
+      <span class="view-link">View Project →</span>
+    </div>
   </div>
 
   <div class="project" onclick="window.location.href='projects/hazardous-waste.html'">
-    <h3>Hazardous Waste Removal Process</h3>
-    <p>Streamlined hazardous waste pickup process using QR codes and automated Teams notifications to ensure environmental compliance. <strong>630+ responses.</strong></p>
-    <span class="view-link">View Project →</span>
+    <div class="thumb" style="background-image: url('images/hazardous1.png');"></div>
+    <div class="info">
+      <h3>Hazardous Waste Removal Process</h3>
+      <p>Streamlined hazardous waste pickup process using QR codes and automated Teams notifications to ensure environmental compliance. <strong>630+ responses.</strong></p>
+      <span class="view-link">View Project →</span>
+    </div>
   </div>
 
   <div class="project" onclick="window.location.href='projects/paint-control.html'">
-    <h3>Paint Control Charts</h3>
-    <p>Real-time monitoring dashboards that reduced variance in viscosity readings and paint kitchen temperatures. <strong>7,000+ submissions.</strong></p>
-    <span class="view-link">View Project →</span>
+    <div class="thumb" style="background-image: url('images/paint-control1.png');"></div>
+    <div class="info">
+      <h3>Paint Control Charts</h3>
+      <p>Real-time monitoring dashboards that reduced variance in viscosity readings and paint kitchen temperatures. <strong>7,000+ submissions.</strong></p>
+      <span class="view-link">View Project →</span>
+    </div>
   </div>
 
   <div class="project" onclick="window.location.href='projects/paint-checksheet.html'">
-    <h3>Digitized Paint System Check Sheet</h3>
-    <p>Digital replacement for paper check sheets, enabling tracking of jobs, fluid rates, and paint defects with full historical analytics. <strong>10,000+ submissions.</strong></p>
-    <span class="view-link">View Project →</span>
+    <div class="thumb" style="background-image: url('images/paint-checksheet1.png');"></div>
+    <div class="info">
+      <h3>Digitized Paint System Check Sheet</h3>
+      <p>Digital replacement for paper check sheets, enabling tracking of jobs, fluid rates, and paint defects with full historical analytics. <strong>10,000+ submissions.</strong></p>
+      <span class="view-link">View Project →</span>
+    </div>
   </div>
 
   <div class="project" onclick="window.location.href='projects/assembly-verification.html'">
-    <h3>Assembly Part Verification System</h3>
-    <p>Improved accountability and feedback loops for welders through structured part verification submissions. <strong>11,000+ submissions.</strong></p>
-    <span class="view-link">View Project →</span>
+    <div class="thumb placeholder">No image yet</div>
+    <div class="info">
+      <h3>Assembly Part Verification System</h3>
+      <p>Improved accountability and feedback loops for welders through structured part verification submissions. <strong>11,000+ submissions.</strong></p>
+      <span class="view-link">View Project →</span>
+    </div>
   </div>
 
   <div class="project" onclick="window.location.href='projects/training.html'">
-    <h3>Training Request System</h3>
-    <p>Automated request and routing system for plant training needs, with Power Automate flows handling submissions, approvals, and notifications across departments.</p>
-    <span class="view-link">View Project →</span>
+    <div class="thumb" style="background-image: url('images/training1.png');"></div>
+    <div class="info">
+      <h3>Training Request System</h3>
+      <p>Automated request and routing system for plant training needs, with Power Automate flows handling submissions, approvals, and notifications across departments.</p>
+      <span class="view-link">View Project →</span>
+    </div>
   </div>
 
 </div>
