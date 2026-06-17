@@ -32,17 +32,16 @@ h2 {
   margin-bottom: 25px;
   box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
   transition: 0.2s;
+  cursor: pointer;
 }
 .project:hover {
   transform: scale(1.02);
   box-shadow: 0px 5px 12px rgba(0,0,0,0.2);
-  cursor: pointer;
 }
 .project h3 { margin-top: 0; }
-.project-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
+.view-link {
+  color: #007CC3;
+  font-weight: bold;
 }
 footer {
   text-align: center;
@@ -64,21 +63,17 @@ footer {
 
   <h2>Featured Projects</h2>
 
-  projects/watchdog.html
-    <div class="project">
-      <h3>Part Print Watchdog</h3>
-      <p>Desktop application that validates SolidWorks print PDFs against manufacturing standards.</p>
-      <span style="color:#007CC3;font-weight:bold;">View Project →</span>
-    </div>
-  </a>
+  <div class="project" onclick="window.location.href='projects/watchdog.html'">
+    <h3>Part Print Watchdog</h3>
+    <p>Desktop application that validates SolidWorks print PDFs against manufacturing standards.</p>
+    <span class="view-link">View Project →</span>
+  </div>
 
-  projects/training.html
-    <div class="project">
-      <h3>Training Automation System</h3>
-      <p>Automated system for managing associate training records using SharePoint, Excel, and workflows.</p>
-      <span style="color:#007CC3;font-weight:bold;">View Project →</span>
-    </div>
-  </a>
+  <div class="project" onclick="window.location.href='projects/training.html'">
+    <h3>Training Automation System</h3>
+    <p>Automated system for managing associate training records using SharePoint, Excel, and workflows.</p>
+    <span class="view-link">View Project →</span>
+  </div>
 
 </div>
 
